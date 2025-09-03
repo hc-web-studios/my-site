@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+
+# Disallow URLs with query parameters (often duplicate content)
+Disallow: /*?
+
+# Allow access to CSS and JS files
+Allow: /style.css
+Allow: /main.js
+Allow: /*.css
+Allow: /*.js
+
+# Allow access to images
+Allow: /img/
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.mp4
+
+# Block specific bots that may consume bandwidth without providing value
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Sitemap location (update this URL when you create a sitemap)
+# Sitemap: https://harrisoncross.com/sitemap.xml
