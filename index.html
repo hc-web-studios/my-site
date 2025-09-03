@@ -301,12 +301,15 @@
                                 <input type="checkbox" id="newsletter" name="newsletter">
                                 <label for="newsletter">Subscribe to offers</label>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="6LdTw7wrAAAAAL3J2UnP357H-4Bcld0lixyoFbN2" data-size="invisible" data-callback="onRecaptchaSuccess"></div>
+                            
                             <div class="form-submit">
                                 <button type="submit" class="submit-btn">
                                     <span>Send Message</span>
                                 </button>
                             </div>
+                            
+                            <!-- Hidden reCAPTCHA -->
+                            <div class="g-recaptcha" data-sitekey="6LdTw7wrAAAAAL3J2UnP357H-4Bcld0lixyoFbN2" data-size="invisible" data-callback="onRecaptchaSuccess" style="position: absolute; left: -9999px; visibility: hidden;"></div>
                         </form>
                     </div>
                 </div>
