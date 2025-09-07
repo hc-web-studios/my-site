@@ -1,0 +1,409 @@
+---
+layout: default
+title: Home
+---
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <video class="hero-video" autoplay muted loop playsinline poster="{{ '/img/video/hero-video.mp4' | relative_url }}">
+      <source src="{{ '/img/video/hero-video.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title reveal">Harrison Cross</h1>
+      <p class="hero-subtitle reveal delay-100">Website SERVICES</p>
+      <div class="reveal delay-200">
+        <a href="#about-me" class="about-cta">
+          <span>LEARN MORE</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcement Bar -->
+  <section class="announcement">
+    <div class="announcement-track">
+      <div class="announcement-group">
+        <span class="announcement-label">10% off all web services untill october 1st</span>
+        <span class="announcement-label">10% off all web services untill october 1st</span>
+        <span class="announcement-label">10% off all web services untill october 1st</span>
+      </div>
+      <div class="announcement-group">
+        <span class="announcement-label">10% off all web services untill october 1st</span>
+        <span class="announcement-label">10% off all web services untill october 1st</span>
+        <span class="announcement-label">10% off all web services untill october 1st</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section reveal delay-100" id="about-me">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="{{ '/img/misc/ME.png' | relative_url }}" alt="About me" loading="lazy">
+        </div>
+        <div class="about-panel">
+          <p class="about-story">MY STORY</p>
+          <div class="reveal delay-100">
+            <h2 class="about-title typing-text" data-text="Hi, I'm Harrison Cross"></h2>
+            <p class="about-text typing-text" data-text="Hi, I'm Harrison Cross, a Brisbane-based web developer passionate about empowering Australian businesses with effective and affordable online presences. I've seen too many businesses get caught in the cycle of high monthly fees and complex website maintenance. That's why I specialize in crafting custom static websites a powerful approach that delivers incredibly fast, secure, and robust online platforms with significantly lower ongoing costs and maintenance. This means you get a professional, high performing website without the hidden fees and headaches, allowing you to focus on what you do best. "></p>
+            <div class="mt-8">
+              <a href="#services" class="about-cta" id="about-cta-btn" style="opacity: 0; visibility: hidden; transition: opacity 0.5s ease, visibility 0.5s ease;">
+                <span>My Services</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <h2 class="services-title">MY SERVICES</h2>
+      </div>
+      <div class="reveal delay-100">
+        <div class="service-tabs">
+          <button class="tab-btn active" data-target="service-launch"><span>LAUNCH</span></button>
+          <button class="tab-btn" data-target="service-shift"><span>SHIFT</span></button>
+          <button class="tab-btn" data-target="service-refresh"><span>GROW</span></button>
+        </div>
+        <div class="service-frame">
+          <!-- LAUNCH Service -->
+          <section id="service-launch" class="service-single active">
+            <div class="service-panel">
+              <div class="service-left">
+                <img src="{{ '/img/misc/LAUNCH.jpg' | relative_url }}" alt="Launch service" loading="lazy">
+              </div>
+              <div class="service-right">
+                <div>
+                  <h2>LAUNCH</h2>
+                  <h3 class="service-subtitle">Custom New Website</h3>
+                  <p class="service-copy">Bring your brand to life with a fast, secure, and SEO-ready static website. Tailored design, smooth performance, and built to grow with you.</p>
+                  <div class="service-price">One-time payment: $350 – $1500</div>
+                  <br>
+                  <a href="#" class="service-cta" id="launch-more-info-btn" onclick="openServiceDetails('launch-details-menu');return false;"><span>MORE INFO</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SHIFT Service -->
+          <section id="service-shift" class="service-single">
+            <div class="service-panel">
+              <div class="service-left">
+                <img src="{{ '/img/misc/SHIFT.jpg' | relative_url }}" alt="Shift service" loading="lazy">
+              </div>
+              <div class="service-right">
+                <div>
+                  <h2>SHIFT</h2>
+                  <h3 class="service-subtitle">Rebuild your current website</h3>
+                  <p class="service-copy">Turn your existing site into a lightning-fast, secure static website. Keep your content and branding — we handle everything, stress-free.</p>
+                  <div class="service-price">One-time payment: $500 – $1500</div>
+                  <br>
+                  <a href="#" class="service-cta" id="shift-more-info-btn" onclick="openServiceDetails('shift-details-menu');return false;"><span>MORE INFO</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- GROW Service -->
+          <section id="service-refresh" class="service-single">
+            <div class="service-panel">
+              <div class="service-left">
+                <img src="{{ '/img/misc/GROW.jpg' | relative_url }}" alt="Grow service" loading="lazy">
+              </div>
+              <div class="service-right">
+                <div>
+                  <h2>GROW</h2>
+                  <h3 class="service-subtitle">Updates & Optimizations</h3>
+                  <p class="service-copy">As your business grows, your website keeps up. Update content, add new features, improve SEO, and optimize performance — all handled quickly and hassle-free.</p>
+                  <div class="service-price">One-time payment: $35 – $350</div>
+                  <br>
+                  <a href="#" class="service-cta" id="grow-more-info-btn" onclick="openServiceDetails('grow-details-menu');return false;"><span>MORE INFO</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Slide-down Menus -->
+  <!-- LAUNCH Service Details Slide-down Menu -->
+  <div id="launch-details-menu" class="service-details-menu">
+    <div class="service-details-content">
+      <div class="service-details-img">
+        <img src="{{ '/img/misc/LAUNCH.jpg' | relative_url }}" alt="Launch service details">
+      </div>
+      <div class="service-details-info">
+        <button class="close-details-btn" aria-label="Close details">&times;</button>
+        <h2 style="font-size:2.5rem; font-weight:900; margin-bottom:0.5em; color:#fdba74; text-align:center;">LAUNCH – Custom New Website</h2>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.5rem; color:#fff; margin-bottom:0.5em; text-align:center;">Build Your Website the Right Way from Day One</h3>
+          <p>Your website is your business’s digital first impression — and we make sure it’s a great one. With Launch, we craft a custom static website designed specifically for your brand, built to impress visitors and convert them into customers.</p>
+        </section>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">What You’ll Get</h3>
+          <ul style="margin-left:1.2em; margin-bottom:0.5em;">
+            <li>✔️ A fully custom-coded static website (HTML, CSS, JavaScript) — no cookie-cutter templates</li>
+            <li>✔️ Responsive design that looks stunning on desktop, tablet, and mobile</li>
+            <li>✔️ Seamless integration with business tools: Formspark, TidyCal, SendFox, SiteGuru, and more</li>
+            <li>✔️ Hosting options: Free hosting with GitHub Pages or paid hosting with Hostinger, set up for you</li>
+            <li>✔️ SEO-ready structure to help your business rank higher on Google</li>
+            <li>✔️ A safe, secure site built with static architecture to reduce vulnerabilities</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">Why Clients Choose Launch</h3>
+          <p>We don’t just build websites — we build fast, secure, and professional online foundations that save you money and position your brand for growth. Every Launch site is coded for speed and built to last, so you can focus on your business instead of worrying about tech.</p>
+        </section>
+        <section style="margin-bottom:1em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">Investment</h3>
+          <div style="background:rgba(55,28,9,0.2); color:#fdba74; padding:0.75rem 1rem; font-size:1.1rem; font-weight:600; display:inline-block; border-radius:0.5em;">One-time payment: $350 – $1500</div>
+        </section>
+        <section style="margin-top:2em; text-align:center;">
+          <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="#contact" class="about-cta service-details-contact" style="font-size:1.2rem; padding:1rem 2.5rem; min-width:150px;"><span>GET A FREE CONSULTATION</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- SHIFT Service Details Slide-down Menu -->
+  <div id="shift-details-menu" class="service-details-menu">
+    <div class="service-details-content">
+      <div class="service-details-img">
+        <img src="{{ '/img/misc/SHIFT.jpg' | relative_url }}" alt="Shift service details">
+      </div>
+      <div class="service-details-info">
+        <button class="close-details-btn" aria-label="Close details">&times;</button>
+        <h2 style="font-size:2.5rem; font-weight:900; margin-bottom:0.5em; color:#fdba74; text-align:center;">SHIFT – Rebuild your current website</h2>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.5rem; color:#fff; margin-bottom:0.5em; text-align:center;">Transform Your Website Without Starting From Scratch</h3>
+          <p>Already have a website, but it’s slow, outdated, or costing you too much every month? Shift takes your existing site and rebuilds it as a high-performance static website — keeping your content, but giving you the speed, security, and long-term savings you need.</p>
+        </section>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">What You’ll Get</h3>
+          <ul style="margin-left:1.2em; margin-bottom:0.5em;">
+            <li>✔️ A complete rebuild of your current site into a streamlined static format</li>
+            <li>✔️ Faster load times, stronger security, and better SEO</li>
+            <li>✔️ A refreshed, modern look while keeping your brand identity intact</li>
+            <li>✔️ Hosting options: Free GitHub Pages or premium Hostinger — whichever suits your business best</li>
+            <li>✔️ Seamless integration with tools like Formspark, TidyCal, SendFox, SiteGuru, and more</li>
+            <li>✔️ Optimized layouts that make your website look flawless and function perfectly on every device</li>
+            <li>✔️ Enhanced protection with SSL and anti-spam safeguards</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">Why Clients Choose Shift</h3>
+          <p>It’s the smart way to upgrade. You keep the value of your existing site, but we make it faster, safer, and more cost-effective. No ongoing hosting headaches, no hidden fees — just a one-time investment that pays for itself.</p>
+        </section>
+        <section style="margin-bottom:1em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">Investment</h3>
+          <div style="background:rgba(55,28,9,0.2); color:#fdba74; padding:0.75rem 1rem; font-size:1.1rem; font-weight:600; display:inline-block; border-radius:0.5em;">One-time payment: $500 – $1500</div>
+        </section>
+        <section style="margin-top:2em; text-align:center;">
+          <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="#contact" class="about-cta service-details-contact" style="font-size:1.2rem; padding:1rem 2.5rem; min-width:150px;"><span>GET A FREE CONSULTATION</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- GROW Service Details Slide-down Menu -->
+  <div id="grow-details-menu" class="service-details-menu">
+    <div class="service-details-content">
+      <div class="service-details-img">
+        <img src="{{ '/img/misc/GROW.jpg' | relative_url }}" alt="Grow service details">
+      </div>
+      <div class="service-details-info">
+        <button class="close-details-btn" aria-label="Close details">&times;</button>
+        <h2 style="font-size:2.5rem; font-weight:900; margin-bottom:0.5em; color:#fdba74; text-align:center;">GROW – Updates & Optimizations</h2>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.5rem; color:#fff; margin-bottom:0.5em; text-align:center;">Keep Your Website Fresh, Secure, and Growing</h3>
+          <p>Your website shouldn’t stand still — it should grow with your business. With Grow, you get reliable, affordable updates and optimizations that keep your site performing at its best.</p>
+        </section>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">What You’ll Get</h3>
+          <ul style="margin-left:1.2em; margin-bottom:0.5em;">
+            <li>✔️ Quick content updates (text, images, layout changes)</li>
+            <li>✔️ SEO improvements to boost your visibility and search rankings</li>
+            <li>✔️ Security upgrades including SSL, spam protection, and firewalls</li>
+            <li>✔️ Accessibility adjustments to make your site user-friendly for all</li>
+            <li>✔️ Speed and performance checks to keep your site fast and reliable</li>
+            <li>✔️ Integration with new tools like Formspark, TidyCal, SendFox, SiteGuru, and more as your business evolves</li>
+            <li>✔️ Support for both GitHub (free hosting) and Hostinger (paid hosting) environments</li>
+          </ul>
+        </section>
+        <section style="margin-bottom:2em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">Why Clients Choose Grow</h3>
+          <p>Because it’s simple. You don’t need an expensive monthly plan or a retainer. With Grow, you only pay for what you need, when you need it — and every update is done with speed, security, and cross-platform performance in mind.</p>
+        </section>
+        <section style="margin-bottom:1em;">
+          <h3 style="font-size:1.3rem; color:#fdba74; margin-bottom:0.5em; text-align:center;">Investment</h3>
+          <div style="background:rgba(55,28,9,0.2); color:#fdba74; padding:0.75rem 1rem; font-size:1.1rem; font-weight:600; display:inline-block; border-radius:0.5em;">One-time payment: $35 – $350</div>
+        </section>
+        <section style="margin-top:2em; text-align:center;">
+          <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="#contact" class="about-cta service-details-contact" style="font-size:1.2rem; padding:1rem 2.5rem; min-width:150px;"><span>GET A FREE CONSULTATION</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-header reveal">
+        <h2 class="contact-title">CONTACT ME</h2>
+        <div class="contact-response">
+          <i class="fas fa-clock"></i>
+          <span>Response Time: Within 24 hours</span>
+        </div>
+      </div>
+      <div class="reveal delay-100">
+        <div class="contact-form-container">
+          <form class="contact-form" action="https://submit-form.com/AcV1AjpX2" method="POST" id="contact-form">
+            <input type="hidden" name="_redirect" value="{{ '/thankyou.html' | relative_url }}">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" id="name" name="name" required class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" id="email" name="email" required class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service" class="form-label">Service Interested In</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="">Select a Service</option>
+                  <option value="launch">LAUNCH - Custom New Website</option>
+                  <option value="shift">SHIFT - Website Redesign</option>
+                  <option value="grow">GROW - Marketing & SEO</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget" class="form-label">Budget Range</label>
+                <select id="budget" name="budget" class="form-select">
+                  <option value="">Select Budget Range</option>
+                  <option value="under-500">Under $500</option>
+                  <option value="500-1000">$500 - $1,000</option>
+                  <option value="1000-2500">$1,000 - $2,500</option>
+                  <option value="2500-5000">$2,500 - $5,000</option>
+                  <option value="5000+">$5,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, goals, and any specific requirements..." class="form-textarea"></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to offers</label>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="submit-btn"><span>Send Message</span></button>
+            </div>
+            <!-- Hidden reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6LdTw7wrAAAAAL3J2UnP357H-4Bcld0lixyoFbN2" data-size="invisible" data-callback="onRecaptchaSuccess" style="position: absolute; left: -9999px; visibility: hidden;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Up Arrow (Desktop Only) -->
+  <a href="#top" id="scroll-up-arrow" style="display:none;" aria-label="Scroll to top">
+    <img src="{{ '/img/misc/arrow.png' | relative_url }}" alt="Scroll to top" style="width:56px;height:56px;display:block;" loading="lazy" />
+  </a>
+</main>
+<script defer>
+(function(){
+  var form = document.getElementById('contact-form');
+  if(!form) return;
+  var widgetId = null;
+  function renderWidget(){
+    if(window.grecaptcha && grecaptcha.render && widgetId === null){
+      var el = document.querySelector('.g-recaptcha');
+      if(el){
+        widgetId = grecaptcha.render(el, {
+          'sitekey': '6LdTw7wrAAAAAL3J2UnP357H-4Bcld0lixyoFbN2',
+          'size': 'invisible',
+          'callback': 'onRecaptchaSuccess'
+        });
+      }
+    }
+  }
+  window.onRecaptchaSuccess = function(token){
+    form.submit();
+  };
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(window.grecaptcha){
+      if(typeof widgetId === 'number'){
+        grecaptcha.execute(widgetId);
+      } else if(grecaptcha.execute){
+        grecaptcha.execute();
+      } else {
+        form.submit();
+      }
+    } else {
+      form.submit();
+    }
+  });
+  renderWidget();
+  var iv = setInterval(function(){ if(window.grecaptcha){ renderWidget(); clearInterval(iv); } }, 500);
+})();
+
+function openServiceDetails(id) {
+  var modals = ['launch-details-menu','shift-details-menu','grow-details-menu'];
+  modals.forEach(function(mid){
+    var el = document.getElementById(mid);
+    if(el) el.classList.remove('active');
+  });
+  var modal = document.getElementById(id);
+  if(modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeServiceDetails() {
+  var modals = ['launch-details-menu','shift-details-menu','grow-details-menu'];
+  modals.forEach(function(mid){
+    var el = document.getElementById(mid);
+    if(el) el.classList.remove('active');
+  });
+  document.body.style.overflow = '';
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.close-details-btn').forEach(function(btn) {
+    btn.addEventListener('click', closeServiceDetails);
+  });
+  // Optional: close modal on ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeServiceDetails();
+  });
+  // Fallback: if no modal is visible, allow scrolling
+  setInterval(function(){
+    var anyOpen = ['launch-details-menu','shift-details-menu','grow-details-menu'].some(function(mid){
+      var el = document.getElementById(mid);
+      return el && el.style.display !== 'none';
+    });
+    if(!anyOpen) document.body.style.overflow = '';
+  }, 500);
+});
+</script>
